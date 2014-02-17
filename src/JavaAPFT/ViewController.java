@@ -1,6 +1,5 @@
 package JavaAPFT;
 
-import XControls.ScoreTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
