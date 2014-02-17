@@ -6,10 +6,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import com.aquafx_project.AquaFx;
+
 /**
- * 
- * @author Patrick
- */
+* This class ....
+*
+* @author  Patrick Michalina <patrickmichalina@mac.com>
+* @version 0.7
+* @since   0.1
+*/
 public class JavaAPFT extends Application {
     
     @Override

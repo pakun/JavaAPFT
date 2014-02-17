@@ -12,9 +12,12 @@ import javafx.scene.control.TextField;
 import javafx.util.StringConverter;
 
 /**
- *
- * @author Patrick Michalina
- */
+* This class ....
+*
+* @author  Patrick Michalina <patrickmichalina@mac.com>
+* @version 0.7
+* @since   0.1
+*/
 public class ViewController implements Initializable {
     @FXML private RadioButton    rbMale;
     @FXML private RadioButton    rbFemale;
@@ -67,15 +70,21 @@ public class ViewController implements Initializable {
             sliderRun.valueProperty().bindBidirectional(apft.rawRunProperty());
             
             // bind text fields to sliders
-            txtAge.textProperty().bindBidirectional(sliderAge.valueProperty(), new IntStringConverter());
-            txtPushUps.textProperty().bindBidirectional(sliderPushUps.valueProperty(), new IntStringConverter());
-            txtSitUps.textProperty().bindBidirectional(sliderSitUps.valueProperty(), new IntStringConverter());
+            txtAge.textProperty().bindBidirectional(sliderAge.valueProperty(), 
+                                                    new IntStringConverter());
+            txtPushUps.textProperty().bindBidirectional(
+                                                sliderPushUps.valueProperty(),
+                                                new IntStringConverter());
+            txtSitUps.textProperty().bindBidirectional(
+                                                sliderSitUps.valueProperty(), 
+                                                new IntStringConverter());
             
             // bind score fields to data model
             txtScorePushUps.textProperty().bind(apft.scorePU().asString());
             txtScoreSitUps.textProperty().bind(apft.scoreSU().asString());
             txtScoreRun.textProperty().bind(apft.scoreRun().asString());
             lblScoreTotal.textProperty().bind(apft.score().asString());
+            apft.ageProperty().set(17);
     
         } catch(NullPointerException ex) {
             //TODO error logging
@@ -89,13 +98,15 @@ public class ViewController implements Initializable {
         @Override
         public String toString(Number t) {
             return t.intValue() + "";
-            //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            //throw new UnsupportedOperationException("Not supported yet."); 
+            //To change body of generated methods, choose Tools | Templates.
         }
 
         @Override
         public Number fromString(String string) {
             return Double.parseDouble(string);
-            //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            //throw new UnsupportedOperationException("Not supported yet."); 
+            //To change body of generated methods, choose Tools | Templates.
         }
 
         }

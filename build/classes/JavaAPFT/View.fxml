@@ -137,7 +137,7 @@
         
     </Group>
     <Label fx:id="lblScoreTotal" text="0"  
-                    layoutX="150" layoutY="150" 
+                    layoutX="200" layoutY="170" 
                     maxWidth="50" minWidth="50"     />
    
 </AnchorPane>

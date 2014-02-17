@@ -7,9 +7,12 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.scene.control.TextField;
 
 /**
- *
- * @author Patrick
- */
+* This class ....
+*
+* @author  Patrick Michalina <patrickmichalina@mac.com>
+* @version 0.7
+* @since   0.1
+*/
 public class ScoreTextField extends TextField {
     private final IntegerProperty min = new SimpleIntegerProperty();
     private final IntegerProperty max = new SimpleIntegerProperty();
