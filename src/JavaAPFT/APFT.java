@@ -4,22 +4,7 @@ import javafx.beans.binding.IntegerBinding;
 import javafx.beans.property.*;
 
 /**
-* This class consists exclusively of static methods that operate on or return
-* collections.  It contains polymorphic algorithms that operate on
-* collections, "wrappers", which return a new collection backed by a
-* specified collection, and a few other odds and ends.
-*
-* <p>The methods of this class all throw a <tt>NullPointerException</tt>
-* if the collections or class objects provided to them are null.
-*
-* <p>The "destructive" algorithms contained in this class, that is, the
-* algorithms that modify the collection on which they operate, are specified
-* to throw <tt>UnsupportedOperationException</tt> if the collection does not
-* support the appropriate mutation primitive(s), such as the <tt>set</tt>
-* method.  These algorithms may, but are not required to, throw this
-* exception if an invocation would have no effect on the collection.  For
-* example, invoking the <tt>sort</tt> method on an unmodifiable list that is
-* already sorted may or may not throw <tt>UnsupportedOperationException</tt>.
+* This class ....
 *
 * @author  Patrick Michalina
 * @since   1.0

@@ -11,8 +11,7 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaAPFT.jar" size="12236" download="eager" />
-    <jar href="lib/XControls.jar" size="3266" download="eager" />
+    <jar href="JavaAPFT.jar" size="13438" download="eager" />
     <jar href="lib/aquafx-0.1.jar" size="408524" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaAPFT" >
