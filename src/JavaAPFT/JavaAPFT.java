@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import com.aquafx_project.AquaFx;
 /**
- * dsfsdf
+ * 
  * @author Patrick
  */
 public class JavaAPFT extends Application {
