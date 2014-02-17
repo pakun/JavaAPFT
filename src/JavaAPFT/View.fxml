@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.URL?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import XControls.*?>
+<?import JavaAPFT.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" 
+            fx:controller="JavaAPFT.ViewController"  
+            prefHeight="200.0" 
+            prefWidth="400.0" 
+            xmlns="http://javafx.com/javafx/8">
+    <stylesheets>
+        <URL value="@ViewStyle.css"/>
+    </stylesheets>
+    <Group fx:id="grpGender"
+           layoutX="14"
+           layoutY="14" >
+        <fx:define>
+            <ToggleGroup fx:id="toggleGroup"/>
+        </fx:define>
+        <RadioButton fx:id="rbMale" 
+                     text="Male" 
+                     selected="true" layoutX="100" 
+                     toggleGroup="$toggleGroup" onAction="#updateGender"    />
+        
+        <RadioButton fx:id="rbFemale" 
+                     text="Female" 
+                     selected="false" layoutX="200"
+                     toggleGroup="$toggleGroup" onAction="#updateGender"     />
+    </Group>
+    <Group fx:id="grpAge" 
+           layoutX="14"
+           layoutY="44" >
+        <Label fx:id="lblAge" 
+               text="Age:"
+               layoutY="2" 
+               textAlignment="RIGHT" maxHeight="100" minWidth="100"
+               alignment="BASELINE_RIGHT"/>
+        <Slider         fx:id="sliderAge" 
+                        layoutX="100" 
+                        layoutY="2"
+                        maxWidth="100"
+                        minWidth="100"/>
+        <ScoreTextField fx:id="txtAge" 
+                        minWidth="50" maxWidth="50"
+                        alignment="BASELINE_CENTER" 
+                        layoutX="200" />
+    </Group>
+    <Group fx:id="grpPushUps" 
+           layoutX="14" 
+           layoutY="74" 
+           disable="true">
+        
+        <Label          fx:id="lblPushUps" 
+                        text="Push Ups:"
+                        layoutY="2" 
+                        alignment="BASELINE_RIGHT" 
+                        maxWidth="100"
+                        minWidth="100"/>
+        
+        <Slider         fx:id="sliderPushUps" 
+                        layoutX="100" 
+                        layoutY="2"
+                        maxWidth="100"
+                        minWidth="100" min="0" max="120"  />
+        
+        <ScoreTextField fx:id="txtPushUps" 
+                        layoutX="200" 
+                        maxWidth="50"
+                        minWidth="50" min="0" max="120"
+                        alignment="BASELINE_CENTER"/>
+        <ScoreTextField fx:id="txtScorePushUps" 
+                        layoutX="254" 
+                        maxWidth="50"
+                        minWidth="50" min="0" max="120" editable="false"
+                        alignment="BASELINE_CENTER"        />
+        
+    </Group>
+    <Group fx:id="grpSitUps" 
+           layoutX="14" 
+           layoutY="104" disable="true"  >
+        <Label fx:id="lblSitUps" 
+               text="Sit Ups:"
+               layoutY="2" 
+               alignment="BASELINE_RIGHT" 
+               maxWidth="100"
+               minWidth="100"         />
+        
+        <Slider         fx:id="sliderSitUps" 
+                        layoutX="100" 
+                        layoutY="2"
+                        maxWidth="100"
+                        minWidth="100"/>
+        
+        <ScoreTextField fx:id="txtSitUps" 
+                        layoutX="200" 
+                        maxWidth="50"
+                        minWidth="50"
+                        alignment="BASELINE_CENTER"/>
+        <ScoreTextField fx:id="txtScoreSitUps" 
+                        layoutX="254" 
+                        maxWidth="50"
+                        minWidth="50" editable="false"
+                        alignment="BASELINE_CENTER"        /> 
+        
+    </Group>
+    <Group fx:id="grpRun" 
+           layoutX="14" 
+           layoutY="134" disable="true"  >
+        <Label fx:id="lblRun" 
+               text="Run:"
+               layoutY="2" 
+               alignment="BASELINE_RIGHT" 
+               maxWidth="100"
+               minWidth="100"         />
+        
+        <Slider         fx:id="sliderRun" 
+                        layoutX="100" 
+                        layoutY="2"
+                        maxWidth="100"
+                        minWidth="100"/>
+        
+        <ScoreTextField fx:id="txtRun" 
+                        layoutX="200" 
+                        maxWidth="50"
+                        minWidth="50"
+                        alignment="BASELINE_CENTER"/>
+        <ScoreTextField fx:id="txtScoreRun" 
+                        layoutX="254" 
+                        maxWidth="50"
+                        minWidth="50" editable="true"
+                        alignment="BASELINE_CENTER"        /> 
+        
+    </Group>
+    <Label fx:id="lblScoreTotal" text="0"  
+                    layoutX="150" layoutY="150" 
+                    maxWidth="50" minWidth="50"     />
+   
+</AnchorPane>
